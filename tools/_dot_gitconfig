@@ -1,0 +1,32 @@
+[color]
+	diff   = auto
+	status = auto
+	branch = auto
+	ui     = true
+	pager  = true
+	interactive = auto
+
+[color "branch"]
+	current = green bold
+	local   = green dim
+	remote  = yellow dim
+
+[color "diff"]
+	commit = blue reverse
+	meta   = yellow reverse
+	frag   = yellow bold
+	old    = red
+	new    = green
+	plain  = white dim
+
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	w  = whatchanged
+	lg = log --graph --all --pretty=format:'%Cred%h%Creset - %Cgreen(%cr)%Creset %s%C(yellow)%d%Creset' --abbrev-commit --date=relative
+
+[core]
+	pager = less -FRSX
+
